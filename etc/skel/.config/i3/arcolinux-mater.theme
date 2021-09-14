@@ -1,4 +1,4 @@
-    ##START THEMING BAR
+    ## START THEMING BAR
     #Theme name : ArcoLinux Mater
 
     # i3 bar colors
@@ -17,9 +17,9 @@
         }
 
     }
-    ##STOP THEMING BAR
+    ## STOP THEMING BAR
 
-    ##START THEMING WM
+    ## START THEMING WM
     #Theme name : ArcoLinux Mater
 
     # Window color settings
@@ -32,4 +32,4 @@
 
     client.background       #242424
 
-    ##STOP THEMING WM
+    ## STOP THEMING WM

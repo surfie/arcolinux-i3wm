@@ -1,4 +1,4 @@
-    ##START THEMING BAR
+    ## START THEMING BAR
     #Theme name : ArcoLinux Zion
 
     # i3 bar colors
@@ -37,9 +37,9 @@
         }
 
     }
-    ##STOP THEMING BAR
+    ## STOP THEMING BAR
 
-    ##START THEMING WM
+    ## START THEMING WM
     #Theme name : ArcoLinux Zion
 
     # Window color settings
@@ -67,4 +67,4 @@
     # the color. Note that this colorclass only takes a single color.
     client.background       #000000
 
-    ##STOP THEMING WM
+    ## STOP THEMING WM
