@@ -30,15 +30,40 @@ set $right semicolon
 
 ################# Single and Dual screen
 
+# current displays
+exec --no-startup-id xrandr --output DP0 --right-of HDMI-0 --auto
+
 # setting variables for later use
 # use xrandr and/or arandr to know the names of your monitors
 # use this line to tell which monitor is on the right
+# xrandr --output DVI-I-2 --right-of DVI-I-1 --auto
 # exec --no-startup-id xrandr --output LVDS1 --mode 1366x768 --output DP3 --mode 1920x1080 --right-of LVDS1
-exec --no-startup-id xrandr --output HDMI2 --right-of HDMI1 --auto
+# exec --no-startup-id xrandr --output DVI-I-0 --right-of HDMI-0 --auto
+# exec --no-startup-id xrandr --output DVI-1 --right-of DVI-0 --auto
+# exec --no-startup-id xrandr --output DVI-D-1 --right-of DVI-I-1 --auto
+# exec --no-startup-id xrandr --output HDMI-2 --right-of HDMI-1 --auto
 
-# my current setup (as example)
-# set $firstMonitor DP3
-# set $secondMonitor LVDS1
+# current setup
+
+set $firstMonitor HDMI-0
+set $secondMonitor DP0
+
+# Other Examples
+
+#set $firstMonitor DP3
+#set $secondMonitor LVDS1
+
+#set $firstMonitor DVI-I-0
+#set $secondMonitor HDMI-0
+
+#set $firstMonitor DVI-0
+#set $secondMonitor DVI-1
+
+#set $firstMonitor DVI-I-1
+#set $secondMonitor DVI-D-1
+
+#set $firstMonitor HDMI-1
+#set $secondMonitor HDMI-2
 
 workspace 1 output $firstMonitor
 workspace 2 output $firstMonitor
@@ -261,8 +286,39 @@ font pango:Noto Mono Regular 13
 # assign [class="Firefox|Vivaldi-stable|Vivaldi-snapshot|Opera"]                      → 3
 # assign [class="Chromium|Google-chrome"]                    → 3
 
-################# autostart - execute applications at boot time
+# Workspace 2 text editor related
+# assign [class="sublime-text|sublime_text|Sublime_text|subl|Subl|subl3|Subl3"]       → 2
+# assign [class="Xed|xed|Brackets|Atom|Code|Geany"]                                   → 2
 
+# Workspace 3 Inkscape
+# assign [class="Inkscape"]                                                           → 3
+
+# Workspace 4 Gimp
+# assign [class="Gimp"]                                                               → 4
+
+# Workspace 5 Images and meld
+# assign [class="ristretto|Ristretto|shotwell|Shotwell|Xviewer|Nitrogen"]             → 5
+# assign [class="feh|gthumb|Gthumb|eog|Eog|Pinta|pixeluvo|Pixeluvo"]                  → 5
+# assign [class="Meld"]                                                               → 5
+
+# Workspace 6 all video related software
+# assign [class="Vlc|vlc"]                                                            → 6
+
+# Workspace 7 virtual machines and settings
+# assign [class="Vmplayer|VirtualBox"]						    → 7
+
+# Workspace 8 file managers
+# assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]                                 → 8
+
+# Workspace 9 email clients
+# assign [class="Geary|Evolution"]                                                    → 9
+
+# Workspace 10 music related
+# assign [class="Spotify|spotify"]                                                    → 10
+# fix for spotify not moving to workspace 10
+# for_window [class="Spotify"] move to workspace 10
+
+################# autostart - execute applications at boot time
 
 # USER APPLICATIONS TO START AT BOOT
 
@@ -458,7 +514,7 @@ bindsym Control+Shift+Print exec --no-startup-id gnome-screenshot -i
 
 # floating enabled from some programs - find with xprop
 
-for_window [class="Arcolinux-welcome-app.py"] floating enable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
+for_window [class="Arcolinux-welcome-app.py"] floating enable
 # for_window [class="Arcolinux-tweak-tool.py"] floating enable
 for_window [class="Arcolinux-calamares-tool.py"] floating enable
 for_window [class="Bleachbit"] floating disable
@@ -489,7 +545,7 @@ for_window [class="Xfce4-taskmanager"] floating enable
 
 # for_window [instance="gimp"] floating disable
 for_window [instance="script-fu"] border normal
-for_window [instance="variety"] floating disable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
+for_window [instance="variety"] floating disable
 
 for_window [title="Copying"] floating enable
 for_window [title="Deleting"] floating enable
@@ -665,7 +721,7 @@ client.background       #242424
 
 ######################################## THE END 
 
-################# Scratchpad                       
+################# Scratchpad
 
 # NOT USED
 
