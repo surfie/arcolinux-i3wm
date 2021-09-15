@@ -694,7 +694,7 @@ bar {
     # from the opening of the "bar {...}" till the end has to go or hashtagged out
     # in order for the system trayicons to show up in polybar
 
-    ## START THEMING BAR
+    ##START THEMING BAR
     # Theme name : ArcoLinux Default
 
     # i3 bar colors
@@ -713,9 +713,9 @@ bar {
         }
 
     }
-    ## STOP THEMING BAR
+    ##STOP THEMING BAR
 
-    ## START THEMING WM
+    ##START THEMING WM
     # Theme name : ArcoLinux Default
 
     # Window color settings
@@ -728,7 +728,7 @@ bar {
 
     client.background       #242424
 
-    ## STOP THEMING WM
+    ##STOP THEMING WM
 
 ######################################## THE END 
 

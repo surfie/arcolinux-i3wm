@@ -648,7 +648,7 @@ bindsym control+mod1+o exec --no-startup-id ~/.config/i3/scripts/picom-toggle.sh
 
 ################# bar appearance                   
 
-## START THEMING WM
+##START THEMING WM
 # Theme name : ArcoLinux Default
 
 # Window color settings
@@ -661,7 +661,7 @@ client.urgent           #d42121 #d42121 #f7f7f7 #d42121
 
 client.background       #242424
 
-## STOP THEMING WM
+##STOP THEMING WM
 
 ######################################## THE END 
 

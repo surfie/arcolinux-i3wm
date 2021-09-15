@@ -1,4 +1,4 @@
-    ## START THEMING BAR
+    ##START THEMING BAR
     #Theme name : ArcoLinux Var Ashes
 
     # i3 bar colors
@@ -34,9 +34,9 @@
         }
 
     }
-    ## STOP THEMING BAR
+    ##STOP THEMING BAR
 
-    ## START THEMING WM
+    ##START THEMING WM
     #Theme name : ArcoLinux Var Ashes
 
     set $base00 #1C2023
@@ -66,4 +66,4 @@
 
     client.background       $base07
 
-    ## STOP THEMING WM
+    ##STOP THEMING WM
